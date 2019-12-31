@@ -4,13 +4,12 @@ Term Project for COMS3101 Python Data Structure
 ### Author
 yz3380@columbia.edu
 
-This is a simple toy financial calculator for bond and option pricing.    
-The calculator is built on tkinter class pages and contains two parts:  
-
+This is a simple toy code for my first Python language class.  
+The program is built with Tkinter for two purposes:  
 - **Bond Pricing**  
 - **European put / call option pricing**  
 
-Can switch pages between index page, bond pricing page and option pricing page.  
+It can switch pages between index page, bond pricing page and option pricing page.  
 Previous page will be closed automatically.  
 
 ## Bond Pricing
