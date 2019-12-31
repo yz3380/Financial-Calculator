@@ -40,7 +40,7 @@ The valid space for parameters are:
 
 If the inputs are invalid, the program will automatically handle the error and pop up a error messagebox.  
 If you enter all the parameters, the program will modify the coupon payment by default.  
-There might be some constraints in the numpy functions so they are deployed in try/except format too.  
+There might be some constraints in the numpy functions so they are deployed in try / except format too.  
 
 ### Sample Output:
 
@@ -74,7 +74,7 @@ $W_{t}$ is a [Wiener process](https://en.wikipedia.org/wiki/Wiener_process) or B
 
 ### Simulation steps:
 1.Set all inputs be positive, and volatility between 0 and 1;  
-2.Generate N paths of stock price $$S_{t}$$, then calculate the option payoff;  
+2.Generate N paths of stock price $S_{t}$, then calculate the option payoff;  
 3.Calculate the mean payoff of all paths, discounted to current value;  
 4.Simulated option price = current value of mean payoff.  
 
@@ -89,7 +89,7 @@ This program is just a basic model with simple user interface.
 
 Set S0 = 100;  
 Set annual interest rate r = 5\%;  
-Set volatility $\sigma$ = 0.2;  
+Set volatility $`\sigma`$ = 0.2;  
 Set T = 0.5 years;  
 Set strike price K = 100;  
 Set any number of paths N >100 (to make the estimatation more accurate);  
