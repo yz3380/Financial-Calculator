@@ -4,7 +4,7 @@ Term Project for COMS3101 Python Data Structure
 ### Author
 yz3380@columbia.edu
 
-This is a simple financial calculator for bond and option pricing.    
+This is a simple toy financial calculator for bond and option pricing.    
 The calculator is built on tkinter class pages and contains two parts:  
 
 - **Bond Pricing**  
@@ -23,7 +23,7 @@ The pricing formula is as below:
 
 where:
 
-- F = face value or par values (usually set to \$1000)  
+- F = face value or par values (usually set to 1000)  
 - C = F * coupon rate = coupon payment (periodic interest payment)  
 - N = T * n = number of payments( years to maturity devided by payment frequency)  
 - i = market interest rate, or required yield, or observed / appropriate yield to maturity (Y/I)  
@@ -44,12 +44,12 @@ There might be some constraints in the numpy functions so they are deployed in t
 
 ### Sample Output:
 
-Set coupon = 80\$;  
+Set coupon = 80;  
 Set yield to maturity = 8\%;  
 Set years to maturity = 2;  
 Select Annualy payment and leave the Price blank;  
-Press Calculate button and the program will automatically calculate the price of the bond equals to \$1000.   
-In fact, since annual coupon rate equals to market rate, the bond is always priced at par (default \$1000), no matter the years.  
+Press Calculate button and the program will automatically calculate the price of the bond equals to 1000.   
+In fact, since annual coupon rate equals to market rate, the bond is always priced at par (default 1000), no matter the years.  
 The interpretation is followed as:  
 "A \$1000 face value bond with annual coupon rate 8.0%, paid annually, matures in 2.0 years,
 is priced at \$1000.0 at the initial date given the annual interest rate is 8.0\%."  
@@ -69,12 +69,12 @@ That is:
 <img style="float: left;" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/266807b65fd50635526a766c0c89a2913085d0c2">
 <br clear="all" />
 
-where $S_{0}$ is the current stock price, $S_{t}$ is the stock price at maturity,  
-$W_{t}$ is a [Wiener process](https://en.wikipedia.org/wiki/Wiener_process) or Brownian motion, and $\mu$  ("the percentage drift") and $\sigma$  ("the percentage volatility") are constants.  
+where S<sub>0</sub> is the current stock price, S<sub>t</sub> is the stock price at maturity,  
+W<sub>t</sub> is a [Wiener process](https://en.wikipedia.org/wiki/Wiener_process) or Brownian motion, and &mu;  ("the percentage drift") and &sigma; ("the percentage volatility") are constants.  
 
 ### Simulation steps:
 1.Set all inputs be positive, and volatility between 0 and 1;  
-2.Generate N paths of stock price $S_{t}$, then calculate the option payoff;  
+2.Generate N paths of stock price S<sub>t</sub>, then calculate the option payoff;  
 3.Calculate the mean payoff of all paths, discounted to current value;  
 4.Simulated option price = current value of mean payoff.  
 
@@ -87,12 +87,12 @@ This program is just a basic model with simple user interface.
 
 ### Sample Output:  
 
-Set S0 = 100;  
+Set S<sub>0</sub> = 100;  
 Set annual interest rate r = 5\%;  
-Set volatility $`\sigma`$ = 0.2;  
+Set volatility &sigma; = 0.2;  
 Set T = 0.5 years;  
 Set strike price K = 100;  
-Set any number of paths N >100 (to make the estimatation more accurate);  
+Set any number of paths N > 100 (to make the estimatation more accurate);  
 Choose option type as call option;  
 Run the Get Price button;   
 The theoretical price is \$6.889 and simulation result plot is printed in notebook as well. 
