@@ -26,16 +26,16 @@ where:
 - F = face value or par values (usually set to 1000)  
 - C = F * coupon rate = coupon payment (periodic interest payment)  
 - N = T * n = number of payments( years to maturity devided by payment frequency)  
-- i = market interest rate, or required yield, or observed / appropriate yield to maturity (Y/I)  
+- i = market interest rate, or required yield, or observed / appropriate yield to maturity (I / Y)  
 - M = value at maturity, usually equals face value  
 - P = market price of bond.  
 
-Here we have 4 parameters P, c, I/Y and T and one selection of payment frequency (n).  
+Here we have 4 parameters P, c, I / Y and T and one selection of payment frequency (n).  
 Using numpy financial cash flow functions, we can get any one of these values after knowing the other 3 as inputs.  
 The valid space for parameters are:
 - P : must be positive  
-- c : greater or equal to zero, when c = 0 it is a zero coupon bond and P = F*(1+i)^(-N) where N = T * n
-- I/Y : must be positive and write as annual rate in percentage
+- c : greater or equal to zero, when c = 0 it is a zero coupon bond and P = F * (1 + i) ^ (-N) where N = T * n
+- I / Y : must be positive and write as annual rate in percentage
 - T : must be positive  
 
 If the inputs are invalid, the program will automatically handle the error and pop up a error messagebox.  
